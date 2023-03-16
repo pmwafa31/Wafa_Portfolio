@@ -1,0 +1,184 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portfolio</title>
+    <link rel="icon" type="image/x-icon" href="/images/logo.png">
+    <link rel="stylesheet" href="style.css">
+    <!-- fontawesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.3.0/css/all.min.css" integrity="sha512-SzlrxWUlpfuzQ+pcUCosxcglQRNAq/DZjVsC0lE40xsADsfeQoEypE+enwcOiGjk/bSuGGKHEyjSoQ1zVisanQ==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+</head>
+<body>
+    <section id="home">
+        
+            <div class="header">
+                <div class="navbar">
+                    <nav>
+                           <h4 class="name">WAFA P M</h4>
+                           <ul id="toggle_nav" class="nav_changed nav_original">
+                                <li><span onclick="closeMenu()"  class="close_icon"><i class="fa-solid fa-square-xmark"></i></span></li>
+                               <li><a href="#home">Home</a></li>
+                               <li><a href="#about">About</a></li>
+                               <li><a href="#works">My Works</a></li>
+                               <li><a href="#contact">Contact</a></li>
+                           </ul>
+                           <span onclick="openMenu()" class="toggle_icon"><i class="fa-solid fa-bars"></i></span>
+                       </nav>
+               </div>
+                <div class="heading">
+                    <h3>I am Wafa PM </h3><br>
+                    <span>MEARN Stack Developer</span>
+                    <a class="cv" href="/cv/WAFA P M.pdf" download="Wafa PM">Download CV</a>                    
+                </div>
+            </div>
+    </section >
+
+    <!-- About section -->
+    <section id="about">
+        <div class="container">
+            <h1>ABOUT</h1>
+            <div class="row">
+                <div class="col1">
+                    <img src="/images/wafa p m.jpg" alt="">
+                </div>
+                <div class="col2">
+                    <!-- <h1>ABOUT</h1> -->
+                    <p class="description">
+                        IT Professional, certified as Microsoft Technology AssociatePassionate about implementing and launching new projects.
+                         Looking to start a career as an entry-level professional with a reputed IT
+                        company that permits me to utilize my skills and knowledge for
+                        self and company growth.
+                    </p>
+                    <div class="tab">
+                        <p class="tab_link active_link" onclick="opentab('skills')">Skills</p>
+                        <p class="tab_link" onclick="opentab('education')">Education</p>
+                    </div>
+                    <div id="skills" class="tab_content active_tab">
+                        <ul>
+                            <li>HTML,  CSS, JAVASCRIPT</li>
+                            <li>Angular JS</li>
+                            <li>React JS</li>
+                            <li>Node Js</li>
+                            <li>Express Js</li>
+                            <li>Mongo db</li>
+                        </ul>
+                    </div>
+                    <div id="education" class="tab_content">
+                        <ul>
+                            <li><span>2022 - 2023</span><br>MER(A)N Stack Web Development Course</li>
+                            <li><span>2010 - 2014</span><br>Bachelor of Technology(IT)</li>
+                            <li><span>2008 - 2010</span><br>Plus Two</li>
+                            <li><span>2007 - 2008</span><br>SSLC</li>
+                            
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Works -->
+    <section id="works">
+        <div class="container">
+            <h1>MY WORKS</h1>
+            <div class="work_row">
+                <div class="work_column">
+                    <img src="/images/Bambino.png" alt="">
+                    <div class="info">
+                        <h4>Bambino - An Online Shop</h4><br>
+                        <p>Front-end :-Angular JS, HTML, CSS</p>
+                        <p>Back-end  :-Node.JS, Express JS, Mongodb</p><br>
+                        <p><a href="https://github.com/pmwafa31/E-Commece_FrontEnd.git">Front-end source code</a></p>
+                        <p><a href="https://github.com/pmwafa31/E-Commerce_BackEnd.git">Back-end source code</a></p>
+                        <p><a href="">Demo Video</a></p>
+                    </div>
+                </div>   
+
+                <div class="work_column">
+                    <img src="/images/BankApp.png" alt="">
+                    <div class="info">
+                        <h4>JanaSeva Bank - An Online bank</h4><br>
+                        <p>Front-end :-Angular JS, HTML, CSS</p>
+                        <p>Back-end  :-Node.JS, Express JS, Mongodb</p><br>
+                        <p><a href="https://github.com/pmwafa31/bankApp_Frontend.git">Front-end source code</a></p>
+                        <p><a href="https://github.com/pmwafa31/bankApp_Backend.git">Back-end source code</a></p>
+                        <p><a href="">Demo Video</a></p>
+                    </div>
+                </div>  
+
+                <div class="work_column">
+                    <img src="/images/Portfolio.png" alt="">
+                    <div class="info">
+                        <h4>Portfolio </h4><br>
+                        <p>Technologies Used :-HTML, CSS and Javascript</p>
+                        <p><a href="https://github.com/pmwafa31/Wafa_Portfolio.git">Source code</a></p>
+                    </div>
+                </div>
+            </div>
+            <!-- <a href="" class="btn" onclick="showHide()">See More</a> -->
+            <!-- <div id="more_work" >
+                <div class="work_row">
+                    <div class="work_column">
+                        <img src="/images/cover1.jpg" alt="">
+                        <div class="info">
+                            <h4>Bambino - An Online Shop</h4><br>
+                            <p>Front-end :-Angular JS, HTML, CSS</p>
+                            <p>Back-end  :-Node.JS, Express JS, Mongodb</p><br>
+                            <p><a href="">Front-end source code</a></p>
+                            <p><a href="">Back-end source code</a></p>
+                            <p><a href="">Demo Video</a></p>
+                        </div>
+                    </div>   
+    
+                    <div class="work_column">
+                        <img src="/images/cover1.jpg" alt="">
+                        <div class="info">
+                            <h4>Bambino - An Online Shop</h4><br>
+                            <p>Front-end :-Angular JS, HTML, CSS</p>
+                            <p>Back-end  :-Node.JS, Express JS, Mongodb</p><br>
+                            <p><a href="">Front-end source code</a></p>
+                            <p><a href="">Back-end source code</a></p>
+                            <p><a href="">Demo Video</a></p>
+                        </div>
+                    </div>  
+    
+                    <div class="work_column">
+                        <img src="/images/cover1.jpg" alt="">
+                        <div class="info">
+                            <h4>Bambino - An Online Shop</h4><br>
+                            <p>Front-end :-Angular JS, HTML, CSS</p>
+                            <p>Back-end  :-Node.JS, Express JS, Mongodb</p><br>
+                            <p><a href="">Front-end source code</a></p>
+                            <p><a href="">Back-end source code</a></p>
+                            <p><a href="">Demo Video</a></p>
+                        </div>
+                    </div>
+                </div>
+            </div> -->
+        </div>
+    </section>
+
+    <!-- contact -->
+    <section id="contact">
+        <div class="container">
+            <h1>CONTACT</h1>
+            <div class="contact">
+                <p>pmwafa@gmail.com</p>
+                <p>+91 - 7591925937</p>
+                <div class="social">
+                    <a href="https://github.com/pmwafa31"><i class="fa-brands fa-github"></i></a>
+                    <a href="http://www.linkedin.com/in/wafa-p-m-37837b1ba"><i class="fa-brands fa-linkedin"></i></a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- footer -->
+    <div class="footer">
+        <p>Copyright &#169; Portfolio. Made by Wafa PM</p>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>

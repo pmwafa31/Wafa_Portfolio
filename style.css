@@ -1,0 +1,371 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    scroll-behavior: smooth;
+}
+body{
+    
+    background-color: rgb(26, 25, 25);
+    color: white;
+}
+
+.header{
+    width: 100%;
+    height: 100vh;
+    background-image: url('/images/devo.jpg');
+    background-size: cover;
+}
+.navbar{
+    /* position: fixed;
+    top: 0; */
+    width: 100%;
+    padding: 20px;
+}
+/* .navbar_black{
+    position: fixed;
+    top: 0;
+    width: 100%;
+    padding: 20px;
+    background-color: rgb(136, 116, 116);
+} */
+nav{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding-left: 40px;
+    /* padding-right: 40px; */
+}
+
+nav ul li{
+    display: inline-block;
+    list-style: none;
+    font-size: 20px;
+    margin-right: 20px;
+}
+nav ul li a{
+    color: white;
+    text-decoration: none;
+}
+
+.name{
+    font-size: 26px;
+    font-weight: bold;
+}
+nav ul li a:hover{
+    font-size: 23px;
+    font-weight: bold;
+}
+.toggle_icon{
+    display: none;
+}
+.close_icon{
+    display: none;
+}
+.heading{
+    position: absolute;
+    top: 40%;
+    left: 40%;
+    display: grid;
+    place-items: center;
+}
+ .heading h3{
+    font-size: 45px;
+    transform: scale(0.75);
+  animation: scale 5s forwards cubic-bezier(0.5, 1, 0.89, 1)
+ }
+ @keyframes scale {
+  100% {
+    transform: scale(1);
+  }
+}
+ .heading span{
+    font-size: 23px;
+    width: 23ch;
+    animation: typing 4s steps(22) infinite, blink .5s step-end infinite alternate;
+    white-space: nowrap;
+    overflow: hidden;
+    border-right: 3px solid;
+ }
+
+ @keyframes typing {
+    from {
+      width: 0
+    }
+  }
+      
+  @keyframes blink {
+    50% {
+      border-color: transparent
+    }
+  }
+
+.cv{
+    margin-top: 10px;
+    text-decoration: none;
+    padding: 8px;
+    border: 1px solid silver;
+    border-radius: 10px;
+    background-color: rgb(119, 115, 115);
+    color: white;
+    box-shadow: 2px 2px;
+    font-weight: bold;
+}
+.cv:hover{
+    padding: 10px;
+    font-size: 20px;
+    background-color: #f0a6bd;
+    box-shadow: 4px 4px;
+}
+ /* about */
+ #about {
+    padding: 80px 0;
+ }
+ .container h1{
+    text-align: center;
+    font-size: 30px;
+    margin-bottom: 70px;
+}
+.container h1:hover {
+    color: rgb(235, 132, 48);
+}
+
+.row{
+    display: grid;
+    grid-template-columns: 30% 70%;
+    background-color: rgb(44, 42, 42);
+    /* border: 2px solid rgb(44, 42, 42); */
+    box-shadow: 10px 10px rgb(73, 72, 72);
+    margin: 0px 40px;
+    border-radius: 20px;
+}
+.col1{
+    /* flex-basis: 35%; */
+    /* width: 30%; */
+    text-align: center;
+}
+.col1 img{
+    margin-top: 50px;
+    border-radius: 50%;
+    transition: 1s ease;
+}
+.col1 img:hover{
+    -webkit-transform: rotateZ(-20deg);
+    -ms-transform: rotateZ(-20deg);
+    transform: rotateZ(-20deg);
+    transition: 1s ease;
+}
+.col2{
+    /* flex-basis: 60%; */
+    /* width: 70%; */
+    padding: 25px;
+    /* background-color: rgb(44, 42, 42);
+    border-radius: 20px;
+    margin-right: 40px;
+    box-shadow: 10px 10px rgb(73, 72, 72); */
+}
+.col2 h1{
+    font-size: 30px;
+}
+.description{
+    margin-top: 15px;
+    font-size: 20px;
+    color: wheat;
+}
+.tab{
+    display: flex;
+    margin-top: 20px;
+}
+.tab_link{
+    font-size: 20px;
+    cursor: pointer;
+    position: relative;
+    margin-right: 50px;
+}
+.tab_link::after{
+    content: '';
+    width: 0;
+    height: 3px;
+    background: rgb(228, 46, 33);
+    position: absolute;
+    left: 0;
+    bottom: -8px;
+    transition: 0.5s;
+}
+.tab_link.active_link::after{
+    width: 50%;
+}
+.tab_content ul li{
+    list-style: none;
+    margin-top: 15px;
+    font-size: 18px;
+    color: wheat;
+}
+.tab_content ul li span{
+    font-size: 15px;
+    color:rgb(247, 82, 70) ;
+}
+.tab_content{
+    display: none;
+}
+.tab_content.active_tab{
+    display: block;
+}
+/* works */
+#works{
+    padding: 20px 0;
+}
+
+.work_row{
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    grid-gap: 40px;
+    margin: 70px 40px  40px;
+    /* margin-top: 70px;
+    margin-left: 20px;
+    margin-right: 20px; */
+}
+.work_column{
+   border-radius: 10px;
+   position: relative;
+   overflow: hidden;
+   height: 250px;
+   box-shadow: 3px 3px rgb(73, 71, 71);
+}
+.work_column img{
+    width: 100%;
+    border-radius: 10px;
+    display: block;
+    height: 100%;
+    transition: transform 0.7s;
+}
+.info{
+    font-size: 20px;
+    width: 100%;
+    height: 0;
+    /* background-color: rgb(48, 45, 45, 0.6); */
+    background: linear-gradient(rgb(48, 45, 45, 0.6), #cf4a74);
+    border-radius: 10px;
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    overflow: hidden;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    padding: 0 20px;
+    transition: height 0.7s;
+}
+.info h4{
+    color: rgb(235, 132, 48);
+}
+.info p{
+    color: wheat;
+}
+.info p a{
+    color: wheat;
+}
+
+.work_column:hover img{
+    transform: scale(1.1);
+}
+.work_column:hover .info{
+    height: 100%;
+}
+
+.btn{
+    display: block;
+    width: fit-content;
+    border: 1px solid #cf4a74;
+    padding: 14px 30px;
+    border-radius: 8px;
+    text-decoration: none;
+    color: white;
+    font-size: 20px;
+    margin: 50px auto;
+}
+.btn:hover{
+    background-color: #cf4a74;
+}
+
+/* contact */
+
+.contact{
+    text-align: center;
+
+}
+.contact p{
+    font-size: 25px;
+    margin: 20px;
+}
+.social a{
+    color: white;
+    font-size: 35px;
+    margin: 20px;
+}
+.contact:hover{
+    color: #cf4a74;
+}
+.footer{
+    width: 100%;
+    text-align: center;
+    padding: 25px 0;
+    margin-top: 20px;
+    background-color: rgb(44, 42, 42);
+    font-size: 20px;
+}
+
+/* css for small media */
+@media only screen and (max-width: 600px) {
+    .heading{
+        left: 20%;
+    }
+    .row{
+        display: block;
+    }
+    .col2{
+        margin: 13px;
+
+    }
+
+}
+@media only screen and (max-width: 768px) {
+  
+    
+    .toggle_icon{
+        display: block;
+        color: white;
+        text-decoration: none;
+        font-size: 24px;
+        padding-right: 20px;
+        cursor: pointer;
+    }
+    .close_icon{
+        display: block;
+        color: white;
+        text-decoration: none;
+        font-size: 24px;
+        cursor: pointer;
+        float: right;
+    }
+    nav .nav_original{
+        display: none;
+    }
+   
+    nav .nav_changed{
+        background-color:black;
+        opacity: 0.8;
+        width: 100%;
+        position: absolute;
+        left: 0;
+        top: 0px;
+        padding-top: 10px;
+        /* display: none; */
+      
+    }
+    nav ul li{
+        display: list-item;
+        margin: 20px;
+        
+    }
+}
